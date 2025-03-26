@@ -1,60 +1,53 @@
-# 🚀 Project Name
+# Gen AI-Powered Data Profiling Solution
 
-## 📌 Table of Contents
-- [Introduction](#introduction)
-- [Demo](#demo)
-- [Inspiration](#inspiration)
-- [What It Does](#what-it-does)
-- [How We Built It](#how-we-built-it)
-- [Challenges We Faced](#challenges-we-faced)
-- [How to Run](#how-to-run)
-- [Tech Stack](#tech-stack)
-- [Team](#team)
+This project provides an AI-powered solution for data profiling and validation based on regulatory instructions. It uses OpenAI's GPT API and freely available Python libraries to extract rules, validate data, and suggest remediation actions.
 
 ---
 
-## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+## Features
+1. **Extract and Refine Rules**: Extract validation rules from regulatory instructions using GPT.
+2. **Generate Profiling Rules**: Automatically define profiling rules for data integrity checks.
+3. **Data Validation**: Validate datasets against extracted and predefined rules.
+4. **Remediation Suggestions**: Suggest automated remediation actions for flagged data issues.
 
-## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
-🖼️ Screenshots:
+---
 
-![Screenshot 1](link-to-image)
+## Prerequisites
+Ensure you have the following installed on your system:
+- Python 3.8 or later
+- pip (Python package manager)
+- OpenAI API key
 
-## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+---
 
-## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+## Setup Instructions
 
-## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+1. **Clone the Repository**  
+   Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/ewfx/gaidp-team-orion.git
+   cd data-profiling-solution
 
-## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
 
-## 🏃 How to Run
-1. Clone the repository  
-   ```sh
-   git clone https://github.com/your-repo.git
-   ```
-2. Install dependencies  
-   ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
-   ```
-3. Run the project  
-   ```sh
-   npm start  # or python app.py
-   ```
+2.Create a Virtual Environment (Optional)
+It's recommended to use a virtual environment:
 
-## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+python -m venv venv
+source venv/bin/activate # For Linux/Mac
+venv\Scripts\activate # For Windows
 
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+3.Install Dependencies
+Install all required Python libraries using:
+pandas
+openai
+
+4.Set Up OpenAI API Key
+Replace YOUR_API_KEY in the script with your actual OpenAI API key. Alternatively, set it as an environment variable:
+
+export OPENAI_API_KEY='your_api_key' # For Linux/Mac
+set OPENAI_API_KEY='your_api_key' # For Windows
+
+5.Run the Script
+Execute the main script:
+
+python GenAI_DP.py
